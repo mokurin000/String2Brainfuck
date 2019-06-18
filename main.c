@@ -24,7 +24,7 @@ int main(int argc, char **argv) {
 			putchar('+');
 		putchar('.');
 		if (j!=i-1)
-			putchar('>');
+			printf("[-]");
 	}
 	return 0;
 }
