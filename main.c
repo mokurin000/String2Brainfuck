@@ -6,6 +6,7 @@ int main(int argc, char **argv) {
 		return 1;
 	}
 	while (argv[1][++i]!=0);
+	putchar('.');
 	for (j=0; j<argv[1][0]; j++)
 		putchar('+');
 	for (j=1; j<i; j++) {
