@@ -1,0 +1,2 @@
+language: c
+script: gcc -O3 -pipe -Wextra -Wall -Werror main.c -o shc
