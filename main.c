@@ -5,7 +5,8 @@ int main(int argc, char **argv) {
 		printf("Usage: %s [string]",*argv);
 		return 1;
 	}
-	while (argv[1][++i]!=0);
+	while (argv[1][++i]!=0)
+		continue;
 	for (j=0; j<argv[1][0]; j++)
 		putchar('+');
 	putchar('.');
