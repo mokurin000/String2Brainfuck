@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
 						putchar('+');
 					printf("<-]>");
 				} else {
-
+					putchar('>');
 				}
 			}
 			for (m=0; m<l; m++)
