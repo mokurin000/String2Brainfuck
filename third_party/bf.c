@@ -45,7 +45,7 @@
 " AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n"\
 " LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n"\
 " OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n"\
-" THE SOFTWARE."
+" THE SOFTWARE.\n"
 
 struct instruction_t {
     unsigned short operator;
@@ -120,7 +120,7 @@ int main(int argc, const char * argv[])
     int status;
     FILE *fp;
     if (argc != 2 || (fp = fopen(argv[1], "r")) == NULL) {
-        fprintf(stderr, "Usage: %s filename\n", argv[0]);
+        fprintf(stderr, "Usage: %s filename\n----------------\nLicense:\n" LICENSE, argv[0]);
         return FAILURE;
     }
     status = compile_bf(fp);
