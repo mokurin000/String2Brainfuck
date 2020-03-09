@@ -1,12 +1,6 @@
 #include <stdio.h>
 // #define DEBUG
 
-int _Abs(register int a, register int b) {
-	register int t = a-b;
-	a = t < 0 ? -t : t;
-	return a;
-}
-
 int main(int argc, char **argv) {
 	register int i = 0,j,k,l,m,last = 0;
 	if (argc != 2) {
