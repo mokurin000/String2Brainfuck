@@ -131,6 +131,6 @@ int main(int argc, const char * argv[])
     if (status == FAILURE) {
         fprintf(stderr, "Error!\n");
     }
-	fprintf(stderr, LICENSE);
+	fprintf(stderr, "\n----------------\nLicense:\n"LICENSE);
     return status;
 }
