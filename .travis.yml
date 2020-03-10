@@ -1,2 +1,2 @@
 language: c
-script: gcc -O3 -pipe -Wextra -Wall -Werror main.c -o shc
+script: for a in *.c;do gcc -O3 -Wextra -Wall -Werror $a || exit 1;done
