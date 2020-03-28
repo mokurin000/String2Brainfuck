@@ -37,10 +37,8 @@ int main(int argc, char **argv) {
 				putchar('+');
 			putchar('.');
 		} else {
-			k = -k;
-			l = -l;
-			k >>= 3; // k /= 8
-			l &= 7; //在更多的机器工作，求余
+			k = -k >> 3; // k /= 8
+			l = -l & 7; //在更多的机器工作，求余
 			if (k == 1)
 				printf(">--------");
 			else {
