@@ -2,7 +2,9 @@
 // #define DEBUG
 
 int main(int argc, char **argv) {
-	register int i = 0,j,k,l,m,last = 0;
+	register int i = 0,j;
+	register int k,m;
+	register int l,last = 0;
 	if (argc != 2) {
 		printf("Usage: %s [string]",*argv);
 		return 1;
