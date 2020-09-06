@@ -44,10 +44,13 @@ int main(int argc, char **argv) {
 			if (k == 1)
 				printf(">--------");
 			else {
-				printf("++++++++[>");
-				for (m=0; m<k; m++)
-					putchar('-');
-				printf("<-]>");
+				if(k) {
+					printf("++++++++[>");
+					for (m=0; m<k; m++)
+						putchar('-');
+					printf("<-]>");
+				} else
+					putchar('>');
 			}
 			for (m=0; m<l; m++)
 				putchar('-');
